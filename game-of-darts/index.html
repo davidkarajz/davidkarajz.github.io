@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Game of Darts</title>
+
+  <!-- <link href="\bower_components\bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="\bower_components\bootstrap\css\bootstrap-grid.css" rel="stylesheet" type="text/css" />
+  <link href="\bower_components\bootstrap\css\bootstrap-reboot.css" rel="stylesheet" type="text/css" /> -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="headline">
+    <h1>Game of Darts</h1>
+  </div>
+
+  <!-- MENU SCREEN -->
+  <div class="menuscreen">
+    <div class="menuitem">
+      <p class="menuheader">Players</p>
+      <!-- <form id="form"> -->
+      <div class="">
+        <input type="radio" name="players" value="1">1
+        <input type="radio" name="players" value="2">2
+        <input type="radio" name="players" value="3">3
+        <input type="radio" name="players" value="4">4
+      </div>
+
+    </div>
+    <div class="menuitem">
+      <p class="menuheader">Score limit</p>
+
+      <div class="">
+        <input type="radio" name="scorelimit" value="301">301
+        <input type="radio" name="scorelimit" value="501">501
+        <input type="radio" name="scorelimit" value="701">701
+        <input type="radio" name="scorelimit" value="901">901
+      </div>
+
+    </div>
+    <div>
+      <button id="start">Start</button>
+    </div>
+    <!-- </form> -->
+  </div>
+
+  <!-- End of MENU SCREEN -->
+
+  <!-- GAME SCREEN -->
+  <div class="gamescreen hidden">
+    <div class="menuitem">
+      <p class="menuheader">Player</p>
+
+      <div class="players">
+      </div>
+
+    </div>
+    <div class="menuitem">
+      <p class="menuheader">Score</p>
+
+      <div class="scores">
+      </div>
+
+    </div>
+    <div class="throw">
+      <p class="menuheader">Throw</p>
+      <input type="number" placeholder="score" id="throwInput">
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <!-- End of GAME SCREEN -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="\bower_components\bootstrap\js\bootstrap.js"></script> -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
