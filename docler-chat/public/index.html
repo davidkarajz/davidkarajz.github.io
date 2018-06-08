@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="docler-chat">
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <div class="bottom">
+            <input class="bottom-item" type="text" id="user" placeholder="Your name">
+            <input class="bottom-item" type="text" id="message" placeholder="Start typing...">
+            <button class="bottom-item" id="send">Send</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

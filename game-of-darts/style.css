@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background:#68a86b;
   font-family: arial;
@@ -15,10 +19,11 @@ ul {
   padding: 0;
 }
 
-.menuheader {
-  background: #EEE;
-  border-radius: 5px;
-  padding: 10px;
+.menuscreen, .gamescreen {
+  display:block;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .headline {
@@ -27,33 +32,23 @@ ul {
   color: white;
   margin: 20px auto;
   max-width: 480px;
-  padding: 10px 40px;
+  padding: 0.1em 2em;
   text-align: center;
-  width: 40%;
+  width: 90%;
+}
+
+.menuheader {
+  background: #EEE;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 
-.menuscreen {
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.gamescreen {
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 960px;
-  margin: 0 auto;
-}
 
 .menuitem {
-
   margin: 1%;
   text-align: center;
-  width: 48%;
+  width: 90%;
 }
 
 .throw {
@@ -71,4 +66,26 @@ ul {
 .activePlayer {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.start-button {
+  margin-top: 20px;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+
+.menuscreen, .gamescreen {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+ 
+.hidden {
+  display:none;
+}
+
 }

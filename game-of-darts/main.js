@@ -23,7 +23,7 @@ throwInput.addEventListener('keypress', function (e) {
 function switchToGame(){
   getGameParameters();
   setGameParameters(players);
-  menuscreen.classList.add('hidden');
+  menuscreen.classList.add('hidden');k
   gamescreen.classList.remove('hidden');
   gamescreen.classList.add('active');
   createGameGUI(players, scorelimit);

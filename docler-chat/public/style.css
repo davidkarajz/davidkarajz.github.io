@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+#docler-chat {
+    border: 2px solid black;
+    height: 500px;
+    margin: 0 auto;
+    width: 360px;
+}
+
+#chat-window {
+    height: 460px;
+    overflow: auto;
+    padding: 5px;
+}
+
+#output p{
+    display: block;
+    padding: 4px 0px;
+    margin: 0 10px;
+}
+
+.self {
+    text-align: right;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 4px 0px;
+    margin: 0 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-item {
+    border: 2px solid black;
+    background: none;
+    margin: 4px;
+    padding: 4px 10px;
+}
+
+#user {
+    width: 90px;
+}
+
+#message {
+    width: 170px;
+}
+
+button {
+    font-weight: bold;
+    width: 80px;
+}
